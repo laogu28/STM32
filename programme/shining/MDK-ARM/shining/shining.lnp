@@ -1,0 +1,21 @@
+--cpu Cortex-M3
+"shining\startup_stm32f103xe.o"
+"shining\main.o"
+"shining\stm32f1xx_it.o"
+"shining\stm32f1xx_hal_msp.o"
+"shining\stm32f1xx_hal_gpio_ex.o"
+"shining\stm32f1xx_hal.o"
+"shining\stm32f1xx_hal_rcc.o"
+"shining\stm32f1xx_hal_rcc_ex.o"
+"shining\stm32f1xx_hal_gpio.o"
+"shining\stm32f1xx_hal_dma.o"
+"shining\stm32f1xx_hal_cortex.o"
+"shining\stm32f1xx_hal_pwr.o"
+"shining\stm32f1xx_hal_flash.o"
+"shining\stm32f1xx_hal_flash_ex.o"
+"shining\stm32f1xx_hal_exti.o"
+"shining\system_stm32f1xx.o"
+--strict --scatter "shining\shining.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "shining.map" -o shining\shining.axf

@@ -1,0 +1,21 @@
+--cpu Cortex-M3
+"flow\startup_stm32f103xe.o"
+"flow\main.o"
+"flow\stm32f1xx_it.o"
+"flow\stm32f1xx_hal_msp.o"
+"flow\stm32f1xx_hal_gpio_ex.o"
+"flow\stm32f1xx_hal.o"
+"flow\stm32f1xx_hal_rcc.o"
+"flow\stm32f1xx_hal_rcc_ex.o"
+"flow\stm32f1xx_hal_gpio.o"
+"flow\stm32f1xx_hal_dma.o"
+"flow\stm32f1xx_hal_cortex.o"
+"flow\stm32f1xx_hal_pwr.o"
+"flow\stm32f1xx_hal_flash.o"
+"flow\stm32f1xx_hal_flash_ex.o"
+"flow\stm32f1xx_hal_exti.o"
+"flow\system_stm32f1xx.o"
+--strict --scatter "flow\flow.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "flow.map" -o flow\flow.axf
