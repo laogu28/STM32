@@ -1,2 +1,3 @@
 # STM32
-hello
+IIC_software完成了模拟IIC通信内容，serial完成了串口通信实现多字节通讯内容
+programme包含了学习时创建的实验项目
