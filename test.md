@@ -19,4 +19,5 @@ A：Renesas 瑞萨  B: Montage Tec. 澜起科技  C: MPS 芯源
 ## RCD(RDIMM) / CDK(U/SO DIMM) ##
 
 RCD: register clock driver   寄存器时钟驱动器
-CKD:clock driver  UDIMM/SODIMM模组中的时钟缓冲芯片
+CKD: clock driver  UDIMM/SODIMM模组中的时钟缓冲芯片
+
